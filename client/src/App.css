@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  overflow-x: hidden;
+}
+.create-memory {
+  padding: 50px 10px;
+}
+.create-memory h3 {
+  text-align: center;
+}
+.memory-form input {
+  margin: 5px 0px;
+}
+.memory-form textarea {
+  margin: 5px 0px;
+}
+
+.memories {
+  margin: 30px 10px;
+}
+.memory {
+  margin: 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 7px;
+  position: relative;
+}
+.memory-image {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.memory-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+.memory-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.memory-body {
+  padding: 5px 15px;
+  text-align: center;
+}
+.memory-author {
+  color: white;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+.memory-date {
+  color: white;
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+}
+.memory-action-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.delete-memory button,
+.like-memory button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.delete-memory button i {
+  color: rgb(188, 32, 32);
+}
+.like-memory button i {
+  font-size: 20px;
+}
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  background: #36454f;
+  color: white;
+}
